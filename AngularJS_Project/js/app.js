@@ -1,15 +1,12 @@
-var myApp = angular.module('myApp',[
-	'ngRoute',
+var myApp = angular.module('myApp',
+	["ngRoute",
   'insertModule'
 ]);
 
 myApp.config(['$routeProvider', function ($routeProvider) {
 	$routeProvider
 	.when('/', {
-		templateUrl: 'views/list.html',
+		templateUrl: 'view/list.html',
 		controller: 'ListController'
 	})
-	.otherwise({
-		redirectTo: '/'
-	});
 }]);
