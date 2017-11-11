@@ -6,8 +6,8 @@
       <p class="price">{{ item.price | currency }}</p>
       <p class="date">{{ item.pubdate | date }}</p>
       <div class="rating">
-        <p class="likes" >+ {{ item.likes }}</p>
-        <p class="dislikes" >- {{ item.dislikes }}</p>
+        <p class="likes" ng-click="toggleLike($index)">+ {{ item.likes }}</p>
+        <p class="dislikes" ng-click="toggleDislike($index)"> {{ item.dislikes }}</p>
       </div>
     </div>
   </div>
